@@ -1,0 +1,9 @@
+<template name="581f3128">
+  <view class="_div data-v-34c646e4">
+    <i-button type="primary" bind:click="handleClick" class="_i-button data-v-34c646e4">这是一个按钮</i-button>
+    <i-card title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" class="_i-card data-v-34c646e4">
+      <view slot="content" class="_view data-v-34c646e4">内容不错</view>
+      <view slot="footer" class="_view data-v-34c646e4">尾部内容</view>
+    </i-card>
+  </view>
+</template>
