@@ -1,7 +1,12 @@
 {
-    "usingComponents": {
-        "i-button": "/static/iview/dist/button/index",
-            "i-card": "/static/iview/dist/card/index"
-        
-    }
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E8F1C9",
+    "navigationBarTitleText": "推荐",
+    "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "van-panel": "/static/dist/panel/index",
+      "van-tab": "/static/dist/tab/index",
+      "van-tabs": "/static/dist/tabs/index"
+  }
+
 }

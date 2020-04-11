@@ -1,9 +1,13 @@
-<template name="581f3128">
+<template name="718cfe12">
   <view class="_div data-v-34c646e4">
-    <i-button type="primary" bind:click="handleClick" class="_i-button data-v-34c646e4">这是一个按钮</i-button>
-    <i-card title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" class="_i-card data-v-34c646e4">
-      <view slot="content" class="_view data-v-34c646e4">内容不错</view>
-      <view slot="footer" class="_view data-v-34c646e4">尾部内容</view>
-    </i-card>
+    <view class="_div data-v-34c646e4 list">
+      <van-tabs sticky custom-class="custom" swipe-threshold="4" line-height="1px" tab-active-class="active" active="active" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-tabs data-v-34c646e4">
+        <van-tab title="推荐" class="_van-tab data-v-34c646e4">内容 1</van-tab>
+        <van-tab title="朋友" class="_van-tab data-v-34c646e4">内容 2</van-tab>
+        <van-tab title="婚姻" class="_van-tab data-v-34c646e4">内容 3</van-tab>
+        <van-tab title="生活" class="_van-tab data-v-34c646e4">内容 4</van-tab>
+        <van-tab title="恋情" class="_van-tab data-v-34c646e4">内容 5</van-tab>
+      </van-tabs>
+    </view>
   </view>
 </template>

@@ -1,4 +1,20 @@
 
 page {
-  background: #ECFAE2;
+  background: aliceblue;
+}
+.van-tabbar-item--active {
+  color: #e10f02;
+}
+.list {
+  margin-top: 30rpx;
+}
+.tab {
+  background: #E8F1C9;
+  font-family: 隶书;
+  font-size: 20rpx;
+}
+.custom {
+  width: 90%;
+  border-radius: 20%;
+  margin-left: 5%;
 }

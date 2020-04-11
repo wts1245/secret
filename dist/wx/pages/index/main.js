@@ -1,31 +1,24 @@
 require("../../common/manifest.js")
 require("../../common/vendor.js")
-global.webpackJsonpMpvue([3],{
+global.webpackJsonpMpvue([4],{
 
-/***/ 20:
+/***/ 19:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index_vue__ = __webpack_require__(20);
 
 
 
-// add this to handle exception
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.errorHandler = function (err) {
-  if (console && console.error) {
-    console.error(err);
-  }
-};
-
-var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__index__["a" /* default */]);
-app.$mount();
+var index = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__index_vue__["a" /* default */]);
+index.$mount();
 
 /***/ }),
 
-/***/ 21:
+/***/ 20:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34,7 +27,7 @@ app.$mount();
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(22)
+  __webpack_require__(21)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -79,7 +72,7 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 22:
+/***/ 21:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -103,18 +96,17 @@ if (false) {(function () {
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
+  data: function data() {
+    return {
+      active: 0
+    };
+  },
 
   methods: {
-    toOtherPage: function toOtherPage() {
-      wx.navigateTo({
-        url: '/pages/my/main'
-      });
+    onChange: function onChange(event) {
+      console.log(event);
     }
   }
 });
@@ -126,24 +118,48 @@ if (false) {(function () {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('i-button', {
+  return _c('div', [_c('div', {
+    staticClass: "list"
+  }, [_c('van-tabs', {
     attrs: {
-      "type": "primary",
-      "bind:click": "handleClick",
+      "sticky": "",
+      "custom-class": "custom",
+      "swipe-threshold": "4",
+      "line-height": "1px",
+      "tab-active-class": "active",
+      "active": "active",
+      "eventid": '0',
+      "mpcomid": '5'
+    },
+    on: {
+      "change": _vm.onChange
+    }
+  }, [_c('van-tab', {
+    attrs: {
+      "title": "推荐",
       "mpcomid": '0'
     }
-  }, [_vm._v("这是一个按钮")]), _vm._v(" "), _c('i-card', {
+  }, [_vm._v("内容 1")]), _vm._v(" "), _c('van-tab', {
     attrs: {
-      "title": "卡片标题",
-      "extra": "额外内容",
-      "thumb": "https://i.loli.net/2017/08/21/599a521472424.jpg",
+      "title": "朋友",
       "mpcomid": '1'
     }
-  }, [_c('view', {
-    slot: "content"
-  }, [_vm._v("内容不错")]), _vm._v(" "), _c('view', {
-    slot: "footer"
-  }, [_vm._v("尾部内容")])])], 1)
+  }, [_vm._v("内容 2")]), _vm._v(" "), _c('van-tab', {
+    attrs: {
+      "title": "婚姻",
+      "mpcomid": '2'
+    }
+  }, [_vm._v("内容 3")]), _vm._v(" "), _c('van-tab', {
+    attrs: {
+      "title": "生活",
+      "mpcomid": '3'
+    }
+  }, [_vm._v("内容 4")]), _vm._v(" "), _c('van-tab', {
+    attrs: {
+      "title": "恋情",
+      "mpcomid": '4'
+    }
+  }, [_vm._v("内容 5")])], 1)], 1)])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -158,4 +174,4 @@ if (false) {
 
 /***/ })
 
-},[20]);
+},[19]);
