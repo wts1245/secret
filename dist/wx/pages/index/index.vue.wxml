@@ -1,12 +1,15 @@
-<template name="718cfe12">
-  <view class="_div data-v-34c646e4">
-    <view class="_div data-v-34c646e4 list">
-      <van-tabs sticky custom-class="custom" swipe-threshold="4" line-height="1px" tab-active-class="active" active="active" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-tabs data-v-34c646e4">
-        <van-tab title="推荐" class="_van-tab data-v-34c646e4">内容 1</van-tab>
-        <van-tab title="朋友" class="_van-tab data-v-34c646e4">内容 2</van-tab>
-        <van-tab title="婚姻" class="_van-tab data-v-34c646e4">内容 3</van-tab>
-        <van-tab title="生活" class="_van-tab data-v-34c646e4">内容 4</van-tab>
-        <van-tab title="恋情" class="_van-tab data-v-34c646e4">内容 5</van-tab>
+<template name="1d03e2dc">
+  <view class="_div data-v-19a94891">
+    <view class="_div data-v-19a94891 list">
+      <van-tabs sticky custom-class="custom" swipe-threshold="4" line-height="1px" tab-active-class="active" active="active" bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_van-tabs data-v-19a94891">
+        <van-tab title="推荐" class="_van-tab data-v-19a94891">内容 1</van-tab>
+        <van-tab title="朋友" class="_van-tab data-v-19a94891">内容 2</van-tab>
+        <van-tab title="婚姻" class="_van-tab data-v-19a94891">内容 3</van-tab>
+        <van-tab title="生活" class="_van-tab data-v-19a94891">内容 4</van-tab>
+        <van-tab title="恋情" class="_van-tab data-v-19a94891">
+          <view class="_div data-v-19a94891">123123</view>
+          <form name="form1" method="post" class="_form data-v-19a94891"><input type="text" placeholder="请输入" value="{{tt}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_input data-v-19a94891" /> <button bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-19a94891">提交</button></form>
+        </van-tab>
       </van-tabs>
     </view>
   </view>

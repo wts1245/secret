@@ -6,21 +6,39 @@
       <van-tab title="朋友">内容 2</van-tab>
       <van-tab title="婚姻">内容 3</van-tab>
       <van-tab title="生活">内容 4</van-tab>
-      <van-tab title="恋情">内容 5</van-tab>
+      <van-tab title="恋情"><div>123123</div>
+        <form name="form1" method="post">
+          <input type="text" placeholder="请输入" v-model="tt"/>
+         <button @click="onput">提交</button>
+        </form>
+      </van-tab>
     </van-tabs>
     </div>
   </div>
 </template>
 <script>
+  const db = wx.cloud.database();
+  const secret = db.collection('secret');
   export default {
   data(){
     return{
-      active: 0
+      active: 0,
+      tt:""
     }
   },
     methods:{
       onChange(event) {
         console.log(event)
+      },
+      onput(){
+        secret.add({
+          data: {
+            title: this.tt
+          },
+        }).then(res => {
+          console.log(res )
+
+        });
       }
     }
   }

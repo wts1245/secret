@@ -16,7 +16,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/tabs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\project\secret\node_modules\prettier" />
     <property name="ts.external.directory.path" value="D:\softinstall\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -40,6 +40,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586597285828</updated>
       <workItem from="1586597296939" duration="16066000" />
+      <workItem from="1586786862787" duration="2436000" />
     </task>
     <servers />
   </component>

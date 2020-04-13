@@ -3,6 +3,8 @@ import App from './App'
 
 Vue.config.productionTip = false
 App.mpType = 'app'
-
+wx.cloud.init({
+  env:'wts-f6a929'
+})
 const app = new Vue(App)
 app.$mount()

@@ -1,14 +1,14 @@
-<import src="/components/card.vue.wxml" /><template name="d351d6f4">
-  <view class="_div data-v-3005ea6e">
-    <swiper wx:if="{{imgUrls.length > 0}}" indidator-dots="imgUrls.length > 1" class="_swiper data-v-3005ea6e">
+<import src="/components/card.vue.wxml" /><template name="0a6630ea">
+  <view class="_div data-v-44819266">
+    <swiper wx:if="{{imgUrls.length > 0}}" indidator-dots="imgUrls.length > 1" class="_swiper data-v-44819266">
       <block wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item">
-        <swiper-item class="_swiper-item data-v-3005ea6e">
-          <image src="{{item}}" mode="scaleToFill" class="_image data-v-3005ea6e"></image>
+        <swiper-item class="_swiper-item data-v-44819266">
+          <image src="{{item}}" mode="scaleToFill" class="_image data-v-44819266"></image>
         </swiper-item>
       </block>
     </swiper>
-    <view class="_ul data-v-3005ea6e container log-list">
-      <view wx:key="index" key="{{index}}" class="_li data-v-3005ea6e log-item {{[aa ? 'red' : '']}}" wx:for="{{logs}}" wx:for-index="index" wx:for-item="log"><template data="{{...$root[$kk+'1_'+index], $root}}" is="4d26689d"></template></view>
+    <view class="_ul data-v-44819266 container log-list">
+      <view wx:key="index" key="{{index}}" class="_li data-v-44819266 log-item {{[aa ? 'red' : '']}}" wx:for="{{logs}}" wx:for-index="index" wx:for-item="log"><template data="{{...$root[$kk+'1_'+index], $root}}" is="1ed7a0f8"></template></view>
     </view>
   </view>
 </template>
